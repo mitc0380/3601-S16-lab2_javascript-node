@@ -11,7 +11,7 @@ Study the project you have cloned. Run it according to the instrucitons in the R
 
 #####What is the purpose of app.js? Explain what happens when a user is trying to access a page "kittens", when a user is trying to access the page "petForm", and when the user submits a form on "petForm". Explain what a "route" is.
 
-	When a user requests kittens, they are asking the server to do app.get('/kittens,....){...} Then the body of that function executes and res.send(..) and sends that stuff to the browser. 
+	When a user requests kittens, they are asking the server to do app.get('/kittens',....){...} Then the body of that function executes and res.send(..) and sends that stuff to the browser. 
 	Similar things happen in for /petForm, except it sends back a file instead of a string. 
 	When a user submits for petForm, it does app.post, and returns the length of the string it was given, and sends the string to the console. 
 	Routes for us are the 0.0.0.0:9000/stuff. When we click things we go to differant routes, alternatively we could go directly to them and the things in app.js that are defined would happen. 
@@ -23,7 +23,7 @@ Study the project you have cloned. Run it according to the instrucitons in the R
 
 #####In your project change the message that appears when the user is trying to access the page "kittens". Describe what you did and how it worked.
 
-> You get the idea...
+	we did the thing, and the message at 0.0.0.0:9000/kittens changed to what we told it to change to. we changed the string in the app.get('/kittens',function(req,res){res.send(...);}); 	
 
 #####Also change the message that a user sees when they are trying to find a page that doesn't exist.
 
