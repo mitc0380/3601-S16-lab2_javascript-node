@@ -11,7 +11,7 @@ Study the project you have cloned. Run it according to the instrucitons in the R
 
 #####What is the purpose of app.js? Explain what happens when a user is trying to access a page "kittens", when a user is trying to access the page "petForm", and when the user submits a form on "petForm". Explain what a "route" is.
 
-> Your Answer Here!
+When a user requests kittens, they are asking the server to do app.get('/kittens,....){...} Then the body of that function executes and res.send(..) and sends that stuff to the browser. 
 
 #####What is the contents of the "public" folder? What is each of the html files there and how are they referenced in app.js?
 
