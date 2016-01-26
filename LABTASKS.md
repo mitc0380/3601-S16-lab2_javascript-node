@@ -18,7 +18,8 @@ Study the project you have cloned. Run it according to the instrucitons in the R
 
 #####What is the contents of the "public" folder? What is each of the html files there and how are they referenced in app.js?
 
-> Your Answer Here!
+	The contents of the public folder are the various parts that make up the parts of the site seen by the browser. Assets has files referanced in the html files, css takes care of css things, and javascript looks like it takes care of testing things. 
+	about, index and petForm are sent to the browser for several routes defined in app.js. They define the layout and content(wrt the css file).	
 
 #####In your project change the message that appears when the user is trying to access the page "kittens". Describe what you did and how it worked.
 
