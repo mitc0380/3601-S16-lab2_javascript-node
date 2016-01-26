@@ -34,12 +34,16 @@ Study the project you have cloned. Run it according to the instrucitons in the R
 	When you submit a form it calls app.post in app.js. req is the request the user submitted, res is the response from the server and we are asking res to do the sendFile function. We're sending information back to the server, as opposed to just the request we gave it when we first accessed the page. 
 
 #####Where is client-side Javascript defined? Name file(s) in which it is used.
-
+	clientJavascript.js- it is called in the index.html file
 #####Where is server-side Javascript helper file defined? Where can it be used? Add a function to it and experiment with where you can call this function.
-
+	 it is defined in the serverJavascript.js file. It can be used in app.js. We added the function double which appends a string to itself and returns it. It worked on the petForm submission, but when used on routes bad things happenned. Curiously nothing happenned when used on index.html...
 #####What is the purpose of package.json file? What's in it, and what does it mean?
 
+	It looks like it keeps track of the versions of everything depended upon for this project. It's probably pretty important for it to actually work on different machines and things like that. 
+
 #####What's in .gitgnore file? What's the purpose of it?
+
+things that git should not track. it's there because there's some things that are better for git to not follow, like personal settings or something like that. 
 
 ## Part #2: exploring testing
 
