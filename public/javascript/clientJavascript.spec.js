@@ -13,5 +13,13 @@ describe('testing basic functions', function(){
     it('this test should fail!', function(){
         expect(returnKittens()).toBe("kittens");
     });
+
+    it('this is a custom test!', function(){
+        expect(double("things")).toBe("thingsthings");
+    });
+
+    it('here is another test we made!',function(){
+        expect(double("")).toBe("");
+    });
 });
 

@@ -64,7 +64,11 @@ Failure occured because the test expected 'Not Kittens' and was given 'kittens'
 
 #####Fix any problems described in the previous question. Describe how you fixed them. Push your fix to GitHub and post a link to the passing build (from build history) here.
 
+https://travis-ci.org/mitc0380/3601-S16-lab2_javascript-node/builds/105483393i
+
 - Study jasmine testing syntax. Think of a Javascript function, describe its behavior by writing tests for it (this is test-driven development, or TDD). Add the function, run the tests. (Actually do this. Don't forget to commit your changes!)
+
+done
 
 ## Part #3: adding a GPA calculator
 

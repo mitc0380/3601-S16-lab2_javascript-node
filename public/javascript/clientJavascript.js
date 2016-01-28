@@ -29,3 +29,6 @@ var returnKittens = function(){
     return "kittens";
 };
 
+var double = function(str){
+    return str + str;
+};
