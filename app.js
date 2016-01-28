@@ -52,8 +52,8 @@ app.get('/GPAForm', function(req, res){
 });
 
 app.post('/GPAForm', function(req, res){
-    res.send("your gpa is: " + tools.average([tools.gradeToNumber(req.body.Grade0),tools.gradeToNumber(req.body.Grade1),tools.gradeToNumber(req.body.Grade2)]));
-    console.log("did the GPA thing");
+    res.send("your gpa is: " + tools.average([tools.gradeToNumber(req.body.Grade0),parseInt(req.body.Credits0),tools.gradeToNumber(req.body.Grade1),parseInt(req.body.Credits1),tools.gradeToNumber(req.body.Grade2),parseInt(req.body.Credits2)]));
+    console.log([tools.gradeToNumber(req.body.Grade0),parseInt(req.body.Credits0),tools.gradeToNumber(req.body.Grade1),parseInt(req.body.Credits1),tools.gradeToNumber(req.body.Grade2),parseInt(req.body.Credits2)]);
 });
 
 app.post('/petForm', function(req, res){

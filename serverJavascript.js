@@ -52,11 +52,19 @@ exports.gradeToNumber = function(str){
 };
 
 exports.average = function(str){
+    var mylength = 0;
     var total = 0;
-    var length = str.length;
+    var temp = 0;
     while(str.length){
-        total+=str.pop();
-    }
-    return total/length;
-};
+        console.log(temp+","+mylength+","+total);
+        temp=str.pop();
+        console.log(temp+","+mylength+","+total);
+        mylength=mylength+temp;
+        console.log(temp+","+mylength+","+total);
+        total=total + temp*str.pop();
+        console.log(temp+","+mylength+","+total);
+        console.log("---------------");
 
+    }
+    return total/mylength;
+};
