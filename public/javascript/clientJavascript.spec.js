@@ -23,7 +23,7 @@ describe('testing basic functions', function(){
     });
 
     it('test for gradeToNumber',function(){
-        expect(gradeToNumber("B")).toBe("3");
+        expect(gradeToNumber("B")).toBe(3);
     });
 
     it('test for gpa',function(){

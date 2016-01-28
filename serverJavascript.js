@@ -12,40 +12,40 @@ exports.gradeToNumber = function(str){
     var num;
     switch (str){
         case "A":
-            num = "4";
+            num = 4;
             break;
         case "A+":
-            num = "4";
+            num = 4;
             break;
         case "A-":
-            num = "3.7";
+            num = 3.7;
             break;
         case "B+":
-            num = "3.3";
+            num = 3.3;
             break;
         case "B":
-            num = "3";
+            num = 3;
             break;
         case "C+":
-            num = "2.3";
+            num = 2.3;
             break;
         case "B-":
-            num = "2.7";
+            num = 2.7;
             break;
         case "C":
-            num = "2";
+            num = 2;
             break;
         case "C-":
-            num = "1.7";
+            num = 1.7;
             break;
         case "D+":
-            num = "1.3";
+            num = 1.3;
             break;
         case "D":
-            num = "1";
+            num = 1;
             break;
         default:
-            num = "0"
+            num = 0;
             break;
     }
     return num;
