@@ -46,6 +46,16 @@ app.get('/petForm', function(req, res){
     //console.log(req.query["newPet"]);
 });
 
+app.get('/GPAForm', function(req, res){
+    res.sendFile('GPAForm.html', options);
+    //console.log(req.query["newPet"]);
+});
+
+app.post('/GPAForm', function(req, res){
+    res.send("your gpa is: " + average([gradeToNumber(req.body.grade0),gradeToNumber(req.body.grade1),gradeToNumber(req.body.grade2)]));
+    console.log("did the GPA thing");
+});
+
 app.post('/petForm', function(req, res){
     res.send(tools.double(tools.double(req.body.newPet + " String Length: ")) + tools.stringLength(req.body.newPet));
     console.log(req.body.newPet);

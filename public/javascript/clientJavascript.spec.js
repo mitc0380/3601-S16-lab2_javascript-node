@@ -21,5 +21,13 @@ describe('testing basic functions', function(){
     it('here is another test we made!',function(){
         expect(double("")).toBe("");
     });
+
+    it('test for gradeToNumber',function(){
+        expect(gradeToNumber("B")).toBe("3");
+    });
+
+    it('test for gpa',function(){
+       expect(average([2,3,4])).toBe(3);
+    });
 });
 

@@ -8,4 +8,3 @@ exports.double = function(str){
     return str + str;
 };
 
-
