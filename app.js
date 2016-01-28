@@ -52,7 +52,7 @@ app.get('/GPAForm', function(req, res){
 });
 
 app.post('/GPAForm', function(req, res){
-    res.send("your gpa is: " + average([gradeToNumber(req.body.grade0),gradeToNumber(req.body.grade1),gradeToNumber(req.body.grade2)]));
+    res.send("your gpa is: " + tools.average([tools.gradeToNumber(req.body.grade0),tools.gradeToNumber(req.body.grade1),tools.gradeToNumber(req.body.grade2)]));
     console.log("did the GPA thing");
 });
 
@@ -79,7 +79,3 @@ var server = app.listen(9000, function(){
 
    console.log("server listening on http://%s:%s", host, port);
 });
-
-
-
-

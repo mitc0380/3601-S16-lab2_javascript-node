@@ -77,8 +77,8 @@ var gradeToNumber = function(str){
 };
 
 var average = function(str){
-    var total = 0;
     var length = str.length;
+    var total = str.pop();
     while(str.length){
         total+=str.pop();
     }
