@@ -49,9 +49,18 @@ things that git should not track. it's there because there's some things that ar
 
 #####Find the testing file, describe where it is located and what it is testing. Run karma (the testing engine) as specified in the Readme and describe results. Do not edit any files at this time.
 
+The karma file is located in the folder for the lab, and the tests are inside the javascript folder in the lublic folder. They are testing functions from the cliektJavascript file. Two tests passed, and one failed. All three were run. This result was expected, so all is good. 
+
 #####After having set up Travis CI with your forked project, play around the page for your project (build history, settings, branches, etc) and describe at least 3 features you think would be useful when troubleshooting a broken project.
 
+The shortcuts to github is useful. If tests are failing we can easily see the changes that caused it. If we run into a similar error in the future, this will make it easy to see if we have encountered it before and keep us from fixing the same thing more than once. 
+It telling us when the build passed the tests, and when it did not as a function of time is also useful. We could easily roll back to the latest version that works correctly if we are unable to figure out what is causing a weird error. 
+So far it travisci has been really easy to work with. I consider that a feature since it isnt getting in the way of productivity at all when things are working correctly.
+
 #####What was the build status of your project right after you got everything set up? Use Travis to find any problems, and describe what failed, if anything. (Which files, what lines, why did failure occur, etc.)
+
+failed. line 525 has a test failure. it is the third test, and it is at /home/travis/build/mitc0380/3601-S16-lab2_javascript-node/public/javascript/clientJavascript.spec.js:14
+Failure occured because the test expected 'Not Kittens' and was given 'kittens'
 
 #####Fix any problems described in the previous question. Describe how you fixed them. Push your fix to GitHub and post a link to the passing build (from build history) here.
 
